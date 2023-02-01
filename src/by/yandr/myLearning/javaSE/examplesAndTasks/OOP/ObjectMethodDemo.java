@@ -37,7 +37,7 @@ class Vehicle{
     public Vehicle(String name, int passengers, int wheels, int maxSpeed, int burnUp) {
         this.name = name;
         this.passengers = passengers;
-        this.wheels = wheels;
+        this.setWheels(wheels);
         this.maxSpeed = maxSpeed;
         this.burnUp = burnUp;
     }
@@ -70,6 +70,10 @@ class Vehicle{
     }
 
     public void setWheels(int wheels) {
+        if (wheels<1||wheels>24){
+            System.out.println("wrong wheels numbers");
+            return;
+        }
         this.wheels = wheels;
     }
 
