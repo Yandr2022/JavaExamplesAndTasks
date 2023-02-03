@@ -74,8 +74,9 @@ class Stack {
 
     private void doubleArray() {
         Object[] newStack = new Object[stack.length * 2];
-//        for (int i = 0; i < stack.length; i++) {
-        System.arraycopy(stack, 0, newStack, 0, stack.length);
+        for (int i = 0; i < stack.length; i++) {
+            System.arraycopy(stack, 0, newStack, 0, stack.length);
+        }
         stack = newStack;
     }
 
