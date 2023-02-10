@@ -2,7 +2,7 @@ package by.yandr.myLearning.javaSE.examplesAndTasks.standardLibraries;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FilterOutputStream;
+
 import java.io.PrintStream;
 
 public class TextOutputToFile {
